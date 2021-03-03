@@ -1,0 +1,123 @@
+/* APP CONFIGURATION */
+
+#app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+}
+
+/* remove body 8px margin */
+* { margin: 0; }
+
+/* ICONS -- material.io */
+
+/* importing style */
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+
+.material-icons {
+    cursor: default;
+}
+
+/* BUTTON FIELDS */
+
+/* icon on el-button class */
+.material-icons#el-button-icon {
+    font-size: 19px;
+    vertical-align: middle;
+    padding-right: 5px;
+    padding-bottom: 3px;
+    cursor: pointer;
+}
+
+/* INPUT FIELDS */
+
+/* input field configurations */
+input {
+    width: 20%;
+    padding: 20px;
+}
+
+/* icon on el-input class */
+.el-icon-view {
+    font-size: 20px;
+    margin: 8px;
+    padding-top: 4px;
+    cursor: pointer;
+    position: absolute;
+}
+
+/* toggle visible icon */
+.el-icon-view:active  {
+    color: blue;
+}
+
+.el-icon-view#active {
+    color: blue !important;
+}
+
+/* PAGE CONFIGURATION */
+
+.content__outer {
+    margin-top: 40px;
+  }
+
+.el-main {
+    background-color: #f7f7fc;
+    color: #333;
+    text-align: center;
+}
+
+/* app title */
+.page-title {
+    text-align: left;
+    margin-left: 10px;
+    margin: 30px;
+    font-size: 20px;
+    cursor: default;
+    opacity: 0.9;
+    transition: text-shadow 0.2s;
+}
+.page-title:hover {
+    text-shadow: 0px 0px 1px gray;
+}
+
+/* main pages title: signup, signin... */
+.page-title-main {
+    text-align: center;
+    margin-left: 10px;
+    margin: 30px;
+    font-size: 40px !important;
+    cursor: default;
+    opacity: 0.9;
+    font-size: 40px;
+    transition: text-shadow 0.2s;
+}
+.page-title-main:hover {
+    text-shadow: 0px 0px 1px gray;
+}
+
+.page-subtitle-main {
+    text-align: center;
+    margin-left: 10px;
+    margin: 30px;
+    font-size: 20px !important;
+    cursor: default;
+    opacity: 0.9;
+    font-size: 40px;
+    transition: text-shadow 0.2s;
+}
+.page-subtitle-main:hover {
+    text-shadow: 0px 0px 1px gray;
+}
+
+/* ROTAÇÕES */
+
+#invertedY {
+    transform: rotateY(180deg);
+}
+
+#invertedX {
+    transform: rotateX(180deg);
+}

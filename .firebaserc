@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "cardapio-s",
+    "cardapio-s_frontend": "cardapio-s"
+  }
+}
