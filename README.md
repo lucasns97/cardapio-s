@@ -42,3 +42,8 @@ npm run build
 ```
 firebase deploy --only hosting
 ```
+
+### Site
+```
+https://cardapio-s.web.app
+```
