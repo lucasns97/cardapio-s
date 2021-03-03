@@ -1,4 +1,8 @@
-# AutoCrypto Frontend
+# Cardápio's Frontend
+
+### Site
+<a href="https://cardapio-s.web.app">Visitar site</a>
+
 
 ## Project setup
 ```
@@ -41,9 +45,4 @@ npm run build
 ### Faça o deploy
 ```
 firebase deploy --only hosting
-```
-
-### Site
-```
-https://cardapio-s.web.app
 ```
