@@ -103,6 +103,9 @@ dist
 # TernJS port file
 .tern-port
 
+# Firebase temps
+.firebase
+
 # Settings
 firebase_credentials.json
 settings.js
