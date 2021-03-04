@@ -3,6 +3,13 @@
     <el-card class="show-menu-card">
       <div slot="header" class="clearfix">
         <span>{{this.typeMenu}}</span>
+        <download-csv
+          :data   = "menuList"
+          name    = "cardápio.csv"
+          :separator-excel="true"
+          encoding="latin1">
+          <el-button icon="el-icon-download" plain type="success" style="float: right; transform: translateY(-23px)" size="small">Baixar Cardápio</el-button>
+        </download-csv>
       </div>
       <el-table
         :data="menuList"
@@ -75,6 +82,11 @@
 </template>
 
 <script>
+
+import Vue from 'vue'
+import JsonCSV from 'vue-json-csv'
+
+Vue.component('downloadCsv', JsonCSV)
 
 export default {
   name: 'ShowMenu',

@@ -108,16 +108,16 @@ export default {
           let sobremesa      = await that.getRandomItem(that.assignedItems['Sobremesas'])
 
           let menu = {
-            acompanhamento: acompanhamento.name,
-            acompanhamentoRecipe: acompanhamento.recipe,
-            mistura: mistura.name,
-            misturaRecipe: mistura.recipe,
-            condimento: condimento.name,
-            condimentoRecipe: condimento.recipe,
-            sobremesa: sobremesa.name,
-            sobremesaRecipe: sobremesa.recipe,
             date: formatDate(new Date(nowTs + 1000*60*60*24*i), false),
-            refeicao: 'Almoço'
+            refeicao: 'Almoço',
+            acompanhamento: acompanhamento.name,
+            mistura: mistura.name,
+            condimento: condimento.name,
+            sobremesa: sobremesa.name,
+            acompanhamentoRecipe: acompanhamento.recipe,
+            misturaRecipe: mistura.recipe,
+            condimentoRecipe: condimento.recipe,
+            sobremesaRecipe: sobremesa.recipe
           }
 
           menuList.push(menu)
@@ -131,17 +131,16 @@ export default {
             sobremesa      = await that.getRandomItem(that.assignedItems['Sobremesas'])
 
             menu = {
+              date: formatDate(new Date(nowTs + 1000*60*60*24*i), false),
+              refeicao: 'Jantar',
               acompanhamento: acompanhamento.name,
-              acompanhamentoRecipe: acompanhamento.recipe,
               mistura: mistura.name,
-              misturaRecipe: mistura.recipe,
               condimento: condimento.name,
-              condimentoRecipe: condimento.recipe,
               sobremesa: sobremesa.name,
-              sobremesaRecipe: sobremesa.recipe,
-              date: formatDate(new Date(nowTs + 1000*60*60*24*i), false),
-              date: formatDate(new Date(nowTs + 1000*60*60*24*i), false),
-              refeicao: 'Janta'
+              acompanhamentoRecipe: acompanhamento.recipe,
+              misturaRecipe: mistura.recipe,
+              condimentoRecipe: condimento.recipe,
+              sobremesaRecipe: sobremesa.recipe
             }
 
             menuList.push(menu)
