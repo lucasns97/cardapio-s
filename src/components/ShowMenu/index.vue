@@ -10,7 +10,8 @@
         :stripe="true">
         <el-table-column
           prop="date"
-          label="Dia">
+          label="Dia"
+          width="100px">
         </el-table-column>
         <el-table-column
           prop="refeicao"
