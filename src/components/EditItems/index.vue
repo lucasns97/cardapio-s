@@ -8,12 +8,15 @@
       <el-table
         :data="items"
         stripe
-        style="width: 100%">
+        style="width: 100%"
+        max-height="440">
         <el-table-column
+          sortable
           prop="name"
           label="Nome">
         </el-table-column>
         <el-table-column
+          sortable
           prop="occurrence"
           label="Ocorrência">
           <template slot-scope="scope">

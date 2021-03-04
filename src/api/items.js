@@ -26,8 +26,14 @@ export async function getTransferItems(itemClass) {
       itemData.label = itemData.name
       itemData.key   = doc.id
 
+      if (!itemData.recipe) {
+        itemData.recipe = `https://www.tudogostoso.com.br/busca?q=${itemData.name.split(' ').join('+')}`
+      }
+
       items.push(itemData)
     });
+
+    items = _.sortBy(items, "name");
 
     resolve(items)
   })
