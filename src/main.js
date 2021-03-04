@@ -30,6 +30,7 @@ import VueFusionCharts from "vue-fusioncharts";
 import FusionCharts from "fusioncharts";
 import TimeSeries from "fusioncharts/fusioncharts.timeseries";
 
+
 // register VueFusionCharts component
 Vue.use(VueFusionCharts, FusionCharts, TimeSeries);
 
